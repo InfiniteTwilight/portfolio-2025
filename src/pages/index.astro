@@ -5,8 +5,11 @@ import Home from "@/components/home.astro";
 import Projects from "@/components/projects.astro";
 import Contact from "@/components/contact.astro";
 import Footer from "@/components/footer.astro";
+import PostHogLayout from '../layouts/PostHogLayout.astro';
 ---
-
+<PostHogLayout>
+  <!-- your existing app components -->
+</PostHogLayout>
 <Layout title="Oscar Hernandez">
   <Nav />
   <Home />
