@@ -2,6 +2,22 @@
 import { Image } from "astro:assets";
 import svgl from "../../public/svgl.png";
 import stockin from "../../public/stockin.png";
+import Img1 from "../../public/Img1.jpg";
+import Img2 from "../../public/Img2.png";
+import Img8 from "../../public/Img8.png";
+import Img9 from "../../public/Img9.png";
+import Img10 from "../../public/Img10.png";
+import Img11 from "../../public/Img11.png";
+import Img12 from "../../public/Img12.png";
+import Img13 from "../../public/Img13.png";
+import Img14 from "../../public/Img14.png";
+import Img15 from "../../public/Img15.png";
+import Img16 from "../../public/Img16.png";
+import ss from "../../public/ss.png";
+import as from "../../public/as.png";
+
+
+
 
 interface Project {
   title: string;
@@ -13,18 +29,18 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "StockIn",
-    image: stockin as ImageMetadata,
-    link: "https://github.com/gothsec/stockin-demo",
-    preview: "https://stockin-demo.vercel.app",
-    status: "In Development",
+    title: "Shutterstock",
+    image: ss as ImageMetadata,
+    link: "https://www.shutterstock.com/g/GlintingDawn",
+    preview: "https://www.shutterstock.com/g/GlintingDawn",
+    status: "Ready",
   },
   {
-    title: "Svgl.app",
-    image: svgl as ImageMetadata,
-    link: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app",
-    status: "Contributor",
+    title: "Adobe Stock",
+    image: as as ImageMetadata,
+    link: "https://stock.adobe.com/contributor/211549775/glintingdawn?load_type=author&prev_url=detail",
+    preview: "https://stock.adobe.com/contributor/211549775/glintingdawn?load_type=author&prev_url=detail",
+    status: "Ready",
   },
 ];
 ---
@@ -62,7 +78,7 @@ const projects: Project[] = [
                   </span>
                 </div>
                 <div class="flex gap-2 ml-auto">
-                  <a
+                  {/*<a
                     target="_blank"
                     href={project.link}
                     aria-label="GitHub"
@@ -76,7 +92,7 @@ const projects: Project[] = [
                     >
                       <path d="M24 12L18.3431 17.6569L16.9289 16.2426L21.1716 12L16.9289 7.75736L18.3431 6.34315L24 12ZM2.82843 12L7.07107 16.2426L5.65685 17.6569L0 12L5.65685 6.34315L7.07107 7.75736L2.82843 12ZM9.78845 21H7.66009L14.2116 3H16.3399L9.78845 21Z" />
                     </svg>
-                  </a>
+                  </a>*/}
                   <a
                     target="_blank"
                     href={project.preview}
@@ -101,21 +117,292 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com/Gothsec?tab=repositories"
+      href="https://www.behance.net/shadowmountains"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
     >
       <span class="md:text-lg text-md">More projects on</span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="size-6"
-      >
-        <path
-          d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"
-        ></path>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 128 128"><defs><linearGradient id="deviconBehance0" x1="64" x2="64" y1="2.16" y2="125.84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#005cff"/><stop offset="1" stop-color="#0047ad"/></linearGradient></defs><rect width="123.68" height="123.67" x="2.16" y="2.16" fill="url(#deviconBehance0)" rx="14.59" ry="14.59"/><path fill="#fff" d="M52.63 60.28s10.5-.78 10.5-13.09s-8.59-18.32-19.47-18.32H7.86v68.8h35.8s21.85.69 21.85-20.31c0 0 .96-17.08-12.88-17.08m-29-19.18h20s4.87 0 4.87 7.16s-2.86 8.2-6.11 8.2H23.64zm19.1 44.34H23.64V67.06h20s7.25-.1 7.25 9.45c.02 7.95-5.28 8.85-8.15 8.93zm51.93-39.06c-26.46 0-26.43 26.43-26.43 26.43s-1.82 26.3 26.43 26.3c0 0 23.54 1.34 23.54-18.29h-12.1s.4 7.4-11 7.4c0 0-12.11.81-12.11-12h35.65s3.87-29.84-23.98-29.84m10.76 20.68h-22.6s1.48-10.6 12.11-10.6s10.49 10.6 10.49 10.6M79.86 32.93h28.38v8.47H79.86z"/></svg>
     </a>
   </div>
+
+  <!-- C A R O U S E L S & G A L L E R I E S -->
+
+    <!-- C A R O U S E L #1 -->
+
+
+ <!-- Slider -->
+<div
+  data-carousel='{
+    "loadingClasses": "opacity-0",
+    "dotsItemClasses": "carousel-box"
+  }' class="relative w-full mt-5" >
+  <div class="carousel h-[32rem]">
+    <div class="carousel-body h-full opacity-0">
+      <div class="carousel-slide">
+        <div class="bg-base-300/60 flex h-full justify-center p-6">
+          <span class="self-center text-2xl sm:text-4xl"><Image src={Img10} alt=""/></span>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="bg-base-300/80 flex h-full justify-center p-6">
+          <span class="self-center text-2xl sm:text-4xl"><Image src={Img11} alt=""/></span>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="bg-base-300 flex h-full justify-center p-6">
+          <span class="self-center text-2xl sm:text-4xl"><Image src={Img12} alt=""/></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="carousel-prev">
+    <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+      <span class="icon-[tabler--chevron-left] size-5 cursor-pointer rtl:rotate-180"></span>
+    </span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button type="button" class="carousel-next">
+    <span class="sr-only">Next</span>
+    <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+      <span class="icon-[tabler--chevron-right] size-5 cursor-pointer rtl:rotate-180"></span>
+    </span>
+  </button>
+
+  <div class="carousel-pagination absolute bottom-3 end-0 start-0 flex justify-center gap-3"></div>
+</div>
+<!-- End Slider -->
+
+  <!-- C A R O U S E L #2 -->
+
+<!-- Slider -->
+<div data-hs-carousel='{
+    "loadingClasses": "opacity-0",
+    "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"
+  }' class="relative my-5">
+  <div class="hs-carousel relative overflow-hidden w-full min-h-96 bg-white rounded-lg">
+    <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+          <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white"><Image src={Img8} alt=""/></span>
+        </div>
+      </div>
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full bg-gray-200 p-6 dark:bg-neutral-800">
+          <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white"><Image src={Img9} alt=""/></span>
+        </div>
+      </div>
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full bg-gray-300 p-6 dark:bg-neutral-700">
+          <span class="self-center text-4xl text-gray-800 transition duration-700 dark:text-white"><Image src={Img10} alt=""/></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6"></path>
+      </svg>
+    </span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+    <span class="sr-only">Next</span>
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    </span>
+  </button>
+
+  <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2"></div>
+</div>
+<!-- End Slider -->
+
+  <!-- C A R O U S E L #3 -->
+
+
+{/*<div class="carousel w-full mb-5">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>*/}
+
+
+
+<!-- C A R O U S E L #4 -->
+
+<!-- Slider -->
+<div data-hs-carousel='{
+  "loadingClasses": "opacity-0",
+  "dotsItemClasses": "hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500",
+  "slidesQty": {
+    "xs": 1,
+    "lg": 1
+  },
+  "isDraggable": true
+}' class="relative">
+  <div class="hs-carousel w-full overflow-hidden bg-dark rounded-lg">
+    <div class="relative min-h-[36rem] -mx-1">
+      <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap opacity-0 cursor-grab transition-transform duration-700 hs-carousel-dragging:transition-none hs-carousel-dragging:cursor-grabbing">
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+            <span class="self-center text-sm text-gray-800 transition duration-700 dark:text-white"><Image src={Img13} alt=""/></span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full bg-gray-200 p-6 dark:bg-neutral-800">
+            <span class="self-center text-sm text-gray-800 transition duration-700 dark:text-white"><Image src={Img14} alt=""/></span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full bg-gray-300 p-6 dark:bg-neutral-700">
+            <span class="self-center text-sm text-gray-800 transition duration-700 dark:text-white"><Image src={Img15} alt=""/></span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+            <span class="self-center text-sm text-gray-800 transition duration-700 dark:text-white"><Image src={Img16} alt=""/></span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full bg-gray-200 p-6 dark:bg-neutral-800">
+            <span class="self-center text-sm text-gray-800 transition duration-700 dark:text-white">Fifth slide</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide px-1">
+          <div class="flex justify-center h-full bg-gray-300 p-6 dark:bg-neutral-700">
+            <span class="self-center text-sm text-gray-800 transition duration-700 dark:text-white">Sixth slide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6"></path>
+      </svg>
+    </span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button type="button" class="hs-carousel-next hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+    <span class="sr-only">Next</span>
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    </span>
+  </button>
+
+  <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2"></div>
+</div>
+<!-- End Slider -->
+
+
+
+
+<!-- G A L L E R Y | FROM PRELINE EXAMPLES -->
+
+<!-- Image Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-5">
+  <a class="group block relative overflow-hidden rounded-lg" href="https://www.shutterstock.com/image-vector/modernlooking-cordless-drill-details-2318421963">
+    <img class="w-full size-96 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="Img2.png" alt="Project">
+    <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+      <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+        <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="text-xs">View</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="group block relative overflow-hidden rounded-lg" href="https://www.shutterstock.com/image-vector/trowel-gardening-tool-details-2321278721">
+    <img class="w-full size-96 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="Img3.png" alt="Project">
+    <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+      <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+        <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="text-xs">View</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="group block relative overflow-hidden rounded-lg" href="https://www.shutterstock.com/image-vector/predecimal-coin-penny-elizabeth-ii-2315850623">
+    <img class="w-full size-96 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="Img4.png" alt="Project">
+    <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+      <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+        <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="text-xs">View</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="group block relative overflow-hidden rounded-lg" href="https://www.shutterstock.com/image-vector/fullsize-crane-parts-2315850837">
+    <img class="w-full size-96 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="Img5.png" alt="Project">
+    <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+      <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+        <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="text-xs">View</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="group block relative overflow-hidden rounded-lg" href="https://www.shutterstock.com/image-vector/crowbar-product-label-other-details-2322326877">
+    <img class="w-full size-96 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="Img6.png" alt="Project">
+    <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+      <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+        <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="text-xs">View</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="group block relative overflow-hidden rounded-lg" href="https://www.shutterstock.com/image-vector/vintage-coin-money-united-states-america-2590724367">
+    <img class="w-full size-96 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="Img7.jpg" alt="Project">
+    <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+      <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+        <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="text-xs">View</span>
+      </div>
+    </div>
+  </a>
+</div>
+<!-- End Image Grid -->
+  
 </section>

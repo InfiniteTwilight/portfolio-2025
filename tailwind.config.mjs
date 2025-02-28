@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui"
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+            "./node_modules/preline/preline.js",
+            "./node_modules/flyonui/dist/js/*.js",
+  ],
   theme: {
     extend: {
       keyframes: {
@@ -15,5 +19,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [daisyui,require("preline/plugin"),require("flyonui"),require("flyonui/plugin")],
 };
